@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Newson Sportec MX Gallery</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(0, 180, 160, 0.22), transparent 35%),
+        linear-gradient(135deg, #050505, #101010 45%, #1a1208);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 45px 20px 25px;
+      background: linear-gradient(90deg, #050505, #111, #050505);
+      border-bottom: 4px solid #ff7a00;
+    }
+
+    header h1 {
+      font-size: 48px;
+      letter-spacing: 3px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    header h2 {
+      margin-top: 12px;
+      font-size: 24px;
+      color: #ff7a00;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .intro {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 25px;
+      text-align: center;
+      line-height: 1.7;
+      font-size: 20px;
+      color: #dddddd;
+    }
+
+    .main-image-section {
+      max-width: 1100px;
+      margin: 35px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .main-image-card {
+      background: rgba(0, 0, 0, 0.65);
+      border: 3px solid #ff7a00;
+      border-radius: 22px;
+      padding: 18px;
+      box-shadow: 0 0 35px rgba(255, 122, 0, 0.35);
+    }
+
+    .main-image-card img {
+      width: 100%;
+      max-width: 900px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 18px;
+    }
+
+    .main-image-card h3 {
+      margin-top: 18px;
+      font-size: 32px;
+      color: #99ff00;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .gallery {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 25px 50px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .gallery-card {
+      background: rgba(0, 0, 0, 0.72);
+      border: 2px solid rgba(255, 122, 0, 0.7);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 35px rgba(153, 255, 0, 0.35);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-content {
+      padding: 22px;
+    }
+
+    .gallery-content h3 {
+      font-size: 28px;
+      color: #ff7a00;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .gallery-content p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #dddddd;
+    }
+
+    .brand-line {
+      text-align: center;
+      font-size: 28px;
+      color: #99ff00;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin: 25px 0 45px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #000000;
+      border-top: 3px solid #ff7a00;
+      padding: 28px 22px;
+      text-align: center;
+    }
+
+    footer .copyright-warning {
+      max-width: 1000px;
+      margin: 0 auto;
+      color: #ffcc99;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    footer strong {
+      color: #ff7a00;
+    }
+
+    @media (max-width: 800px) {
+      header h1 {
+        font-size: 34px;
+      }
+
+      header h2 {
+        font-size: 18px;
+      }
+
+      .intro {
+        font-size: 18px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-card img {
+        height: auto;
+      }
+
+      .main-image-card h3 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Newson Sportec MX Gallery</h1>
+    <h2>Ride. Build. Perform.</h2>
+  </header>
+
+  <section class="intro">
+    <p>
+      Welcome to the Newson Sportec motocross competition gallery.
+      This website presents a powerful racing story from different angles:
+      the front scene, sky scene, rear scene, left scene, and pit engineering discussion.
+    </p>
+  </section>
+
+  <!-- Main image in the center -->
+  <section class="main-image-section">
+    <div class="main-image-card">
+      <img src="front-scene.png" alt="Newson Sportec front motocross competition scene">
+      <h3>Main Front Scene</h3>
+    </div>
+  </section>
+
+  <div class="brand-line">
+    Newson Sportec Competition Series
+  </div>
+
+  <!-- Gallery images -->
+  <section class="gallery">
+
+    <div class="gallery-card">
+      <img src="sky-scene.png" alt="Newson Sportec sky scene motocross competition">
+      <div class="gallery-content">
+        <h3>Sky Scene</h3>
+        <p>
+          A wide racing view from above, showing the competition track, sky,
+          race banners, riders, and the Newson Sportec racing atmosphere.
+        </p>
+      </div>
+    </div>
+
+    <div class="gallery-card">
+      <img src="rear-scene.png" alt="Newson Sportec rear scene motocross competition">
+      <div class="gallery-content">
+        <h3>Rear Scene</h3>
+        <p>
+          A powerful rear-angle scene showing the rider pushing through mud,
+          speed, dust, and the pressure of the race.
+        </p>
+      </div>
+    </div>
+
+    <div class="gallery-card">
+      <img src="left-scene.png" alt="Newson Sportec left scene motocross competition">
+      <div class="gallery-content">
+        <h3>Left Scene</h3>
+        <p>
+          A dramatic left-side competition view with the Newson Sportec rider
+          leaning into the turn and fighting through the dirt track.
+        </p>
+      </div>
+    </div>
+
+    <div class="gallery-card">
+      <img src="pit-engineering-scene.png" alt="Newson Sportec rider discussing with engineers">
+      <div class="gallery-content">
+        <h3>Pit Engineering Scene</h3>
+        <p>
+          After the race, the rider removes his helmet and discusses performance,
+          bike setup, and race strategy with the Newson Sportec engineering team.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="copyright-warning">
+      <strong>Copyright Warning:</strong>
+      All images, logos, graphics, designs, and brand materials on this website are for
+      Newson Sportec promotional, creative, and portfolio display purposes only.
+      Do not copy, download, reuse, edit, sell, or redistribute any image or design
+      without written permission from Newson Sportec.
+    </div>
+  </footer>
+
+</body>
+</html>
